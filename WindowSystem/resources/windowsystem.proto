@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+
+service WindowOcService{
+    rpc windowsOC(WindowRequest)returns(WindowReply);
+}
+message WindowRequest{
+    bool val= 1;
+}
+
+message WindowReply{
+    bool val= 1;
+}
