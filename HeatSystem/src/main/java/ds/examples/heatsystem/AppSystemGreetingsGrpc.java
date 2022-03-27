@@ -16,6 +16,10 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
 /**
+ * <pre>
+ *this was me trying to make an app that could communicate to all the servers to controll them remotly but i relised this was not the way to do it
+ *dont think what i intedned could be done with the knowledge i have
+ * </pre>
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.15.0)",
@@ -83,6 +87,10 @@ public final class AppSystemGreetingsGrpc {
   }
 
   /**
+   * <pre>
+   *this was me trying to make an app that could communicate to all the servers to controll them remotly but i relised this was not the way to do it
+   *dont think what i intedned could be done with the knowledge i have
+   * </pre>
    */
   public static abstract class AppSystemGreetingsImplBase implements io.grpc.BindableService {
 
@@ -107,6 +115,10 @@ public final class AppSystemGreetingsGrpc {
   }
 
   /**
+   * <pre>
+   *this was me trying to make an app that could communicate to all the servers to controll them remotly but i relised this was not the way to do it
+   *dont think what i intedned could be done with the knowledge i have
+   * </pre>
    */
   public static final class AppSystemGreetingsStub extends io.grpc.stub.AbstractStub<AppSystemGreetingsStub> {
     private AppSystemGreetingsStub(io.grpc.Channel channel) {
@@ -134,6 +146,10 @@ public final class AppSystemGreetingsGrpc {
   }
 
   /**
+   * <pre>
+   *this was me trying to make an app that could communicate to all the servers to controll them remotly but i relised this was not the way to do it
+   *dont think what i intedned could be done with the knowledge i have
+   * </pre>
    */
   public static final class AppSystemGreetingsBlockingStub extends io.grpc.stub.AbstractStub<AppSystemGreetingsBlockingStub> {
     private AppSystemGreetingsBlockingStub(io.grpc.Channel channel) {
@@ -160,6 +176,10 @@ public final class AppSystemGreetingsGrpc {
   }
 
   /**
+   * <pre>
+   *this was me trying to make an app that could communicate to all the servers to controll them remotly but i relised this was not the way to do it
+   *dont think what i intedned could be done with the knowledge i have
+   * </pre>
    */
   public static final class AppSystemGreetingsFutureStub extends io.grpc.stub.AbstractStub<AppSystemGreetingsFutureStub> {
     private AppSystemGreetingsFutureStub(io.grpc.Channel channel) {

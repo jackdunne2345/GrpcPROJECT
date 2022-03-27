@@ -17,7 +17,6 @@ private static final long serialVersionUID = 0L;
   }
   private HeatRequest() {
     temp_ = 0;
-    number_ = 0;
   }
 
   @java.lang.Override
@@ -47,11 +46,6 @@ private static final long serialVersionUID = 0L;
           case 8: {
 
             temp_ = input.readInt32();
-            break;
-          }
-          case 16: {
-
-            number_ = input.readInt32();
             break;
           }
           default: {
@@ -95,15 +89,6 @@ private static final long serialVersionUID = 0L;
     return temp_;
   }
 
-  public static final int NUMBER_FIELD_NUMBER = 2;
-  private int number_;
-  /**
-   * <code>int32 number = 2;</code>
-   */
-  public int getNumber() {
-    return number_;
-  }
-
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -121,9 +106,6 @@ private static final long serialVersionUID = 0L;
     if (temp_ != 0) {
       output.writeInt32(1, temp_);
     }
-    if (number_ != 0) {
-      output.writeInt32(2, number_);
-    }
     unknownFields.writeTo(output);
   }
 
@@ -136,10 +118,6 @@ private static final long serialVersionUID = 0L;
     if (temp_ != 0) {
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(1, temp_);
-    }
-    if (number_ != 0) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, number_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -159,8 +137,6 @@ private static final long serialVersionUID = 0L;
     boolean result = true;
     result = result && (getTemp()
         == other.getTemp());
-    result = result && (getNumber()
-        == other.getNumber());
     result = result && unknownFields.equals(other.unknownFields);
     return result;
   }
@@ -174,8 +150,6 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TEMP_FIELD_NUMBER;
     hash = (53 * hash) + getTemp();
-    hash = (37 * hash) + NUMBER_FIELD_NUMBER;
-    hash = (53 * hash) + getNumber();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -311,8 +285,6 @@ private static final long serialVersionUID = 0L;
       super.clear();
       temp_ = 0;
 
-      number_ = 0;
-
       return this;
     }
 
@@ -340,7 +312,6 @@ private static final long serialVersionUID = 0L;
     public ds.examples.heatsystem.HeatRequest buildPartial() {
       ds.examples.heatsystem.HeatRequest result = new ds.examples.heatsystem.HeatRequest(this);
       result.temp_ = temp_;
-      result.number_ = number_;
       onBuilt();
       return result;
     }
@@ -391,9 +362,6 @@ private static final long serialVersionUID = 0L;
       if (other == ds.examples.heatsystem.HeatRequest.getDefaultInstance()) return this;
       if (other.getTemp() != 0) {
         setTemp(other.getTemp());
-      }
-      if (other.getNumber() != 0) {
-        setNumber(other.getNumber());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -446,32 +414,6 @@ private static final long serialVersionUID = 0L;
     public Builder clearTemp() {
       
       temp_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private int number_ ;
-    /**
-     * <code>int32 number = 2;</code>
-     */
-    public int getNumber() {
-      return number_;
-    }
-    /**
-     * <code>int32 number = 2;</code>
-     */
-    public Builder setNumber(int value) {
-      
-      number_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int32 number = 2;</code>
-     */
-    public Builder clearNumber() {
-      
-      number_ = 0;
       onChanged();
       return this;
     }

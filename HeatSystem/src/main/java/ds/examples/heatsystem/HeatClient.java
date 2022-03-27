@@ -10,12 +10,14 @@ import ds.examples.heatsystem.NewJFrame;
 
 public class HeatClient  {
 	public static void main(String[] args) {
+		//set visisble the gui
                 NewJFrame j =new NewJFrame();
                 j.setVisible(true);
 		
 	}
         public static String run(int temp){
                 int port =50051;
+                //this was a mistake here
 		int port2=50052;
                 
 		String host="localhost";

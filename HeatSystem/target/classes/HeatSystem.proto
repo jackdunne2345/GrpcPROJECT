@@ -5,7 +5,8 @@ option java_multiple_files=true;
 option java_outer_classname= "HeatSystemServiceImp";
 package heatsystem;
 
-
+//this was me trying to make an app that could communicate to all the servers to controll them remotly but i relised this was not the way to do it
+//dont think what i intedned could be done with the knowledge i have
 service AppSystemGreetings{
 
 	rpc appSystem(HeatRequest) returns(HeatReply) {
@@ -20,7 +21,7 @@ service HeatSystemGreetings{
 
 message HeatRequest{
 	int32 temp=1;
-	int32 number=2;
+
 }
 
 message HeatReply{

@@ -11,9 +11,4 @@ public interface HeatRequestOrBuilder extends
    * <code>int32 temp = 1;</code>
    */
   int getTemp();
-
-  /**
-   * <code>int32 number = 2;</code>
-   */
-  int getNumber();
 }
