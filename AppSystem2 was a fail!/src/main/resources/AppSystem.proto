@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option java_package="ds.examples.appsystem";
+
+option java_multiple_files=true;
+option java_outer_classname= "AppSystemServiceImp";
+package appsystem;
+
+
+service AppSystemGreetings{
+
+	rpc appSystem(HeatRequest) returns(HeatReply) {
+		}
+}
+service HeatSystemGreetings{
+
+	rpc heat(HeatRequest) returns(HeatReply) {
+		}
+}
+
+
+message HeatRequest{
+	int32 temp=1;
+
+}
+
+message HeatReply{
+	string message=1;
+}
+
+message WindowReply{
+	int32 val=1;
+}
