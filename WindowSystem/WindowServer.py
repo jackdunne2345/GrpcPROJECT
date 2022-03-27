@@ -5,8 +5,10 @@ from concurrent import futures
 #print('we dont have lift off')
 class WindowOcServiceServicer(windowsystem_pb2_grpc.WindowOcServiceServicer):
     def windowsOC(self, request, context):
-        toggle=windowsystem_pb2.WindowRequest.val
-        return windowsystem_pb2.WindowResult(toggle=toggle)
+        toggle=windowsystem_pb2.WindowRequest.val 
+        print(toggle);
+        return windowsystem_pb2.WindowResult(val=toggle)
+        
 
 def main():
     server =grpc.server(futures.ThreadPoolExecutor(max_workers=1))
@@ -16,5 +18,6 @@ def main():
     server.add_insecure_port('[::]:50052')
     server.start()
     server.wait_for_termination()
+    
+    
 
-main()
