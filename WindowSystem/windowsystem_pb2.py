@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x12windowsystem.proto\"\x1c\n\rWindowRequest\x12\x0b\n\x03val\x18\x01 \x01(\x08\"\x1a\n\x0bWindowReply\x12\x0b\n\x03val\x18\x01 \x01(\x08\x32<\n\x0fWindowOcService\x12)\n\twindowsOC\x12\x0e.WindowRequest\x1a\x0c.WindowReplyb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x12windowsystem.proto\"\x1c\n\rWindowRequest\x12\x0b\n\x03val\x18\x01 \x01(\x05\"\x1d\n\x0bWindowReply\x12\x0e\n\x06stream\x18\x01 \x01(\x05\x32<\n\x0fWindowOcService\x12)\n\twindowsOC\x12\x0e.WindowRequest\x1a\x0c.WindowReplyb\x06proto3')
 
 
 
@@ -41,7 +41,7 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _WINDOWREQUEST._serialized_start=22
   _WINDOWREQUEST._serialized_end=50
   _WINDOWREPLY._serialized_start=52
-  _WINDOWREPLY._serialized_end=78
-  _WINDOWOCSERVICE._serialized_start=80
-  _WINDOWOCSERVICE._serialized_end=140
+  _WINDOWREPLY._serialized_end=81
+  _WINDOWOCSERVICE._serialized_start=83
+  _WINDOWOCSERVICE._serialized_end=143
 # @@protoc_insertion_point(module_scope)
