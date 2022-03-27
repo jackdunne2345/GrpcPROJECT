@@ -10,7 +10,7 @@ message WindowRequest{
     
     int32 val= 1;
 }
-
+//this should be a string so that i can feed the message to the gui
 message WindowReply{
     int32 val= 1;
 }

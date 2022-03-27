@@ -18,6 +18,7 @@ def main():
     server.add_insecure_port('[::]:50052')
     server.start()
     server.wait_for_termination()
-    
+
+main()
     
 
