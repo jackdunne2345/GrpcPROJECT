@@ -15,7 +15,7 @@ public class HeatServer extends HeatSystemGreetingsImplBase {
 					.addService(hService)
 					.build()
 					.start();
-			System.out.println("server waiting for a request");
+			System.out.println("we have lift off!!");
 			//this blocks and waiting for client request
 			server.awaitTermination();
 		} catch (IOException e) {
@@ -27,15 +27,16 @@ public class HeatServer extends HeatSystemGreetingsImplBase {
 		}
 	}
 	//implementing the server method
-	public void sayHello(HeatRequest request, StreamObserver<HeatReply> responseObserver) {
+	public void heat(HeatRequest request, StreamObserver<HeatReply> responseObserver) {
 	   int temp=request.getTemp();
 	   int number=request.getNumber();
 	   System.out.println("heat set to "+temp+"°C");
 	   
-	  String reply_text="heat is set to"+Integer.toString(temp);
+	  String reply_text="heat is set to "+Integer.toString(temp);
 	   HeatReply reply = HeatReply.newBuilder().setMessage(reply_text).build();
 
 	   responseObserver.onNext(reply);
+	   responseObserver.onCompleted();
 	} 
 }
 

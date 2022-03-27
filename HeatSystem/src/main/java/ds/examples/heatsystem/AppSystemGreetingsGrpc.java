@@ -20,183 +20,183 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.15.0)",
     comments = "Source: HeatSystem.proto")
-public final class HeatSystemGreetingsGrpc {
+public final class AppSystemGreetingsGrpc {
 
-  private HeatSystemGreetingsGrpc() {}
+  private AppSystemGreetingsGrpc() {}
 
-  public static final String SERVICE_NAME = "heatsystem.HeatSystemGreetings";
+  public static final String SERVICE_NAME = "heatsystem.AppSystemGreetings";
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<ds.examples.heatsystem.HeatRequest,
-      ds.examples.heatsystem.HeatReply> getHeatMethod;
+      ds.examples.heatsystem.HeatReply> getAppSystemMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "heat",
+      fullMethodName = SERVICE_NAME + '/' + "appSystem",
       requestType = ds.examples.heatsystem.HeatRequest.class,
       responseType = ds.examples.heatsystem.HeatReply.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<ds.examples.heatsystem.HeatRequest,
-      ds.examples.heatsystem.HeatReply> getHeatMethod() {
-    io.grpc.MethodDescriptor<ds.examples.heatsystem.HeatRequest, ds.examples.heatsystem.HeatReply> getHeatMethod;
-    if ((getHeatMethod = HeatSystemGreetingsGrpc.getHeatMethod) == null) {
-      synchronized (HeatSystemGreetingsGrpc.class) {
-        if ((getHeatMethod = HeatSystemGreetingsGrpc.getHeatMethod) == null) {
-          HeatSystemGreetingsGrpc.getHeatMethod = getHeatMethod = 
+      ds.examples.heatsystem.HeatReply> getAppSystemMethod() {
+    io.grpc.MethodDescriptor<ds.examples.heatsystem.HeatRequest, ds.examples.heatsystem.HeatReply> getAppSystemMethod;
+    if ((getAppSystemMethod = AppSystemGreetingsGrpc.getAppSystemMethod) == null) {
+      synchronized (AppSystemGreetingsGrpc.class) {
+        if ((getAppSystemMethod = AppSystemGreetingsGrpc.getAppSystemMethod) == null) {
+          AppSystemGreetingsGrpc.getAppSystemMethod = getAppSystemMethod = 
               io.grpc.MethodDescriptor.<ds.examples.heatsystem.HeatRequest, ds.examples.heatsystem.HeatReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "heatsystem.HeatSystemGreetings", "heat"))
+                  "heatsystem.AppSystemGreetings", "appSystem"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   ds.examples.heatsystem.HeatRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   ds.examples.heatsystem.HeatReply.getDefaultInstance()))
-                  .setSchemaDescriptor(new HeatSystemGreetingsMethodDescriptorSupplier("heat"))
+                  .setSchemaDescriptor(new AppSystemGreetingsMethodDescriptorSupplier("appSystem"))
                   .build();
           }
         }
      }
-     return getHeatMethod;
+     return getAppSystemMethod;
   }
 
   /**
    * Creates a new async stub that supports all call types for the service
    */
-  public static HeatSystemGreetingsStub newStub(io.grpc.Channel channel) {
-    return new HeatSystemGreetingsStub(channel);
+  public static AppSystemGreetingsStub newStub(io.grpc.Channel channel) {
+    return new AppSystemGreetingsStub(channel);
   }
 
   /**
    * Creates a new blocking-style stub that supports unary and streaming output calls on the service
    */
-  public static HeatSystemGreetingsBlockingStub newBlockingStub(
+  public static AppSystemGreetingsBlockingStub newBlockingStub(
       io.grpc.Channel channel) {
-    return new HeatSystemGreetingsBlockingStub(channel);
+    return new AppSystemGreetingsBlockingStub(channel);
   }
 
   /**
    * Creates a new ListenableFuture-style stub that supports unary calls on the service
    */
-  public static HeatSystemGreetingsFutureStub newFutureStub(
+  public static AppSystemGreetingsFutureStub newFutureStub(
       io.grpc.Channel channel) {
-    return new HeatSystemGreetingsFutureStub(channel);
+    return new AppSystemGreetingsFutureStub(channel);
   }
 
   /**
    */
-  public static abstract class HeatSystemGreetingsImplBase implements io.grpc.BindableService {
+  public static abstract class AppSystemGreetingsImplBase implements io.grpc.BindableService {
 
     /**
      */
-    public void heat(ds.examples.heatsystem.HeatRequest request,
+    public void appSystem(ds.examples.heatsystem.HeatRequest request,
         io.grpc.stub.StreamObserver<ds.examples.heatsystem.HeatReply> responseObserver) {
-      asyncUnimplementedUnaryCall(getHeatMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getAppSystemMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getHeatMethod(),
+            getAppSystemMethod(),
             asyncUnaryCall(
               new MethodHandlers<
                 ds.examples.heatsystem.HeatRequest,
                 ds.examples.heatsystem.HeatReply>(
-                  this, METHODID_HEAT)))
+                  this, METHODID_APP_SYSTEM)))
           .build();
     }
   }
 
   /**
    */
-  public static final class HeatSystemGreetingsStub extends io.grpc.stub.AbstractStub<HeatSystemGreetingsStub> {
-    private HeatSystemGreetingsStub(io.grpc.Channel channel) {
+  public static final class AppSystemGreetingsStub extends io.grpc.stub.AbstractStub<AppSystemGreetingsStub> {
+    private AppSystemGreetingsStub(io.grpc.Channel channel) {
       super(channel);
     }
 
-    private HeatSystemGreetingsStub(io.grpc.Channel channel,
+    private AppSystemGreetingsStub(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected HeatSystemGreetingsStub build(io.grpc.Channel channel,
+    protected AppSystemGreetingsStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
-      return new HeatSystemGreetingsStub(channel, callOptions);
+      return new AppSystemGreetingsStub(channel, callOptions);
     }
 
     /**
      */
-    public void heat(ds.examples.heatsystem.HeatRequest request,
+    public void appSystem(ds.examples.heatsystem.HeatRequest request,
         io.grpc.stub.StreamObserver<ds.examples.heatsystem.HeatReply> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getHeatMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getAppSystemMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
   /**
    */
-  public static final class HeatSystemGreetingsBlockingStub extends io.grpc.stub.AbstractStub<HeatSystemGreetingsBlockingStub> {
-    private HeatSystemGreetingsBlockingStub(io.grpc.Channel channel) {
+  public static final class AppSystemGreetingsBlockingStub extends io.grpc.stub.AbstractStub<AppSystemGreetingsBlockingStub> {
+    private AppSystemGreetingsBlockingStub(io.grpc.Channel channel) {
       super(channel);
     }
 
-    private HeatSystemGreetingsBlockingStub(io.grpc.Channel channel,
+    private AppSystemGreetingsBlockingStub(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected HeatSystemGreetingsBlockingStub build(io.grpc.Channel channel,
+    protected AppSystemGreetingsBlockingStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
-      return new HeatSystemGreetingsBlockingStub(channel, callOptions);
+      return new AppSystemGreetingsBlockingStub(channel, callOptions);
     }
 
     /**
      */
-    public ds.examples.heatsystem.HeatReply heat(ds.examples.heatsystem.HeatRequest request) {
+    public ds.examples.heatsystem.HeatReply appSystem(ds.examples.heatsystem.HeatRequest request) {
       return blockingUnaryCall(
-          getChannel(), getHeatMethod(), getCallOptions(), request);
+          getChannel(), getAppSystemMethod(), getCallOptions(), request);
     }
   }
 
   /**
    */
-  public static final class HeatSystemGreetingsFutureStub extends io.grpc.stub.AbstractStub<HeatSystemGreetingsFutureStub> {
-    private HeatSystemGreetingsFutureStub(io.grpc.Channel channel) {
+  public static final class AppSystemGreetingsFutureStub extends io.grpc.stub.AbstractStub<AppSystemGreetingsFutureStub> {
+    private AppSystemGreetingsFutureStub(io.grpc.Channel channel) {
       super(channel);
     }
 
-    private HeatSystemGreetingsFutureStub(io.grpc.Channel channel,
+    private AppSystemGreetingsFutureStub(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected HeatSystemGreetingsFutureStub build(io.grpc.Channel channel,
+    protected AppSystemGreetingsFutureStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
-      return new HeatSystemGreetingsFutureStub(channel, callOptions);
+      return new AppSystemGreetingsFutureStub(channel, callOptions);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<ds.examples.heatsystem.HeatReply> heat(
+    public com.google.common.util.concurrent.ListenableFuture<ds.examples.heatsystem.HeatReply> appSystem(
         ds.examples.heatsystem.HeatRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getHeatMethod(), getCallOptions()), request);
+          getChannel().newCall(getAppSystemMethod(), getCallOptions()), request);
     }
   }
 
-  private static final int METHODID_HEAT = 0;
+  private static final int METHODID_APP_SYSTEM = 0;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.BidiStreamingMethod<Req, Resp> {
-    private final HeatSystemGreetingsImplBase serviceImpl;
+    private final AppSystemGreetingsImplBase serviceImpl;
     private final int methodId;
 
-    MethodHandlers(HeatSystemGreetingsImplBase serviceImpl, int methodId) {
+    MethodHandlers(AppSystemGreetingsImplBase serviceImpl, int methodId) {
       this.serviceImpl = serviceImpl;
       this.methodId = methodId;
     }
@@ -205,8 +205,8 @@ public final class HeatSystemGreetingsGrpc {
     @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_HEAT:
-          serviceImpl.heat((ds.examples.heatsystem.HeatRequest) request,
+        case METHODID_APP_SYSTEM:
+          serviceImpl.appSystem((ds.examples.heatsystem.HeatRequest) request,
               (io.grpc.stub.StreamObserver<ds.examples.heatsystem.HeatReply>) responseObserver);
           break;
         default:
@@ -225,9 +225,9 @@ public final class HeatSystemGreetingsGrpc {
     }
   }
 
-  private static abstract class HeatSystemGreetingsBaseDescriptorSupplier
+  private static abstract class AppSystemGreetingsBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
-    HeatSystemGreetingsBaseDescriptorSupplier() {}
+    AppSystemGreetingsBaseDescriptorSupplier() {}
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
@@ -236,21 +236,21 @@ public final class HeatSystemGreetingsGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
-      return getFileDescriptor().findServiceByName("HeatSystemGreetings");
+      return getFileDescriptor().findServiceByName("AppSystemGreetings");
     }
   }
 
-  private static final class HeatSystemGreetingsFileDescriptorSupplier
-      extends HeatSystemGreetingsBaseDescriptorSupplier {
-    HeatSystemGreetingsFileDescriptorSupplier() {}
+  private static final class AppSystemGreetingsFileDescriptorSupplier
+      extends AppSystemGreetingsBaseDescriptorSupplier {
+    AppSystemGreetingsFileDescriptorSupplier() {}
   }
 
-  private static final class HeatSystemGreetingsMethodDescriptorSupplier
-      extends HeatSystemGreetingsBaseDescriptorSupplier
+  private static final class AppSystemGreetingsMethodDescriptorSupplier
+      extends AppSystemGreetingsBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
     private final String methodName;
 
-    HeatSystemGreetingsMethodDescriptorSupplier(String methodName) {
+    AppSystemGreetingsMethodDescriptorSupplier(String methodName) {
       this.methodName = methodName;
     }
 
@@ -265,12 +265,12 @@ public final class HeatSystemGreetingsGrpc {
   public static io.grpc.ServiceDescriptor getServiceDescriptor() {
     io.grpc.ServiceDescriptor result = serviceDescriptor;
     if (result == null) {
-      synchronized (HeatSystemGreetingsGrpc.class) {
+      synchronized (AppSystemGreetingsGrpc.class) {
         result = serviceDescriptor;
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
-              .setSchemaDescriptor(new HeatSystemGreetingsFileDescriptorSupplier())
-              .addMethod(getHeatMethod())
+              .setSchemaDescriptor(new AppSystemGreetingsFileDescriptorSupplier())
+              .addMethod(getAppSystemMethod())
               .build();
         }
       }

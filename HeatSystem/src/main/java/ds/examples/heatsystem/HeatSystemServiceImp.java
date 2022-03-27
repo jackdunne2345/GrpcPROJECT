@@ -24,6 +24,11 @@ public final class HeatSystemServiceImp {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_heatsystem_HeatReply_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_heatsystem_WindowReply_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_heatsystem_WindowReply_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -35,11 +40,13 @@ public final class HeatSystemServiceImp {
     java.lang.String[] descriptorData = {
       "\n\020HeatSystem.proto\022\nheatsystem\"+\n\013HeatRe" +
       "quest\022\014\n\004temp\030\001 \001(\005\022\016\n\006number\030\002 \001(\005\"\034\n\tH" +
-      "eatReply\022\017\n\007message\030\001 \001(\t2S\n\023HeatSystemG" +
-      "reetings\022<\n\010sayHello\022\027.heatsystem.HeatRe" +
-      "quest\032\025.heatsystem.HeatReply\"\000B0\n\026ds.exa" +
-      "mples.heatsystemB\024HeatSystemServiceImpP\001" +
-      "b\006proto3"
+      "eatReply\022\017\n\007message\030\001 \001(\t\"\032\n\013WindowReply" +
+      "\022\013\n\003val\030\001 \001(\0052S\n\022AppSystemGreetings\022=\n\ta" +
+      "ppSystem\022\027.heatsystem.HeatRequest\032\025.heat" +
+      "system.HeatReply\"\0002O\n\023HeatSystemGreeting" +
+      "s\0228\n\004heat\022\027.heatsystem.HeatRequest\032\025.hea" +
+      "tsystem.HeatReply\"\000B0\n\026ds.examples.heats" +
+      "ystemB\024HeatSystemServiceImpP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -65,6 +72,12 @@ public final class HeatSystemServiceImp {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_heatsystem_HeatReply_descriptor,
         new java.lang.String[] { "Message", });
+    internal_static_heatsystem_WindowReply_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_heatsystem_WindowReply_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_heatsystem_WindowReply_descriptor,
+        new java.lang.String[] { "Val", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
